@@ -1,0 +1,183 @@
+html, body, .main-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  padding-top: 50px;
+}
+#sidebar {
+  width: 250px;
+  height: 100%;
+  max-width: 100%;
+  float: left;
+  transition: all 0.25s ease-out;
+}
+#features {
+  margin: 0px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#sidebar-hide-btn {
+  margin-top: -2px;
+}
+#map {
+  width: auto;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#loading {
+  position: absolute;
+  width: 220px;
+  height: 19px;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -110px;
+  z-index: 20001;
+}
+#feature-tabs {
+  margin-bottom: 15px;
+}
+#attribution {
+  margin-bottom: 0px;
+}
+.app-icon {
+  height: 100%;
+  margin-top: -5px;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-top: -10px;
+  margin-bottom: -5px;
+  margin-right: 15px;
+  display: inline;
+}
+.navbar-header .navbar-icon-container {
+  margin-right: 15px;
+}
+.navbar-header .navbar-icon {
+  line-height: 50px;
+  height: 50px;
+}
+.navbar-header a.navbar-icon {
+  margin-left: 18px;
+}
+.sidebar-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.sidebar-table {
+  position: absolute;
+  width: 100%;
+  top: 103px;
+  bottom: 0px;
+  overflow: auto;
+}
+.feature-row {
+  cursor: pointer;
+}
+.new-marker-popup {
+  text-align: center;
+  cursor: pointer;
+}
+.table {
+  margin-bottom: 0px;
+}
+.progress-bar-full {
+  width: 100%;
+}
+.fa-white {
+  color: #FFFFFF;
+}
+/*.modal-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 10000;
+}
+.modal-dialog {
+  z-index: 100000;
+}*/
+.leaflet-control-layers-list input[type="radio"], input[type="checkbox"] {
+  margin: 2px;
+}
+.leaflet-control-layers label {
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+@media (max-width: 992px) {
+  .navbar .navbar-brand {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px){
+  .navbar .navbar-brand {
+    font-size: 15px;
+  }
+  #sidebar {
+    display: none;
+  }
+  .url-break {
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .dropdown .dropdown-menu a i{
+    color: #FFFFFF;
+  }
+  .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+  }
+}
+/* Print Handling */
+@media print {
+  .navbar {
+    display: none !important;
+  }
+  .leaflet-control-container {
+    display: none !important;
+  }
+}
+/* Leaflet Locate Control- Mapbox style */
+/*.leaflet-touch .leaflet-bar-part-single {
+  -webkit-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+  border-bottom: none;
+}*/
+
+.leaflet-control-locate a {
+  background-image: url(../img/locate-control/crosshairs.png);
+  background-size:14px 14px;
+  background-position: 50% 50%;
+}
+
+.leaflet-touch .leaflet-control-locate a {
+  background-image: url(../img/locate-control/crosshairs.png);
+}
+
+.leaflet-control-locate.requesting a {
+  background-size:12px 12px;
+  background-image: url(../img/locate-control/spinner.gif);
+  background-position: 50% 50%;
+}
+
+.leaflet-control-locate.active a {
+  background-image: url(../img/locate-control/crosshairs-active.png);
+}
+
+.leaflet-control-locate.active.following a {
+  background-image: url(../img/locate-control/crosshairs-following.png);
+}

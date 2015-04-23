@@ -1,0 +1,117 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Damage Information</h3>
+  </div>
+  <div class="panel-body">
+    <div class="form-group" data-role="fieldcontain">
+      <label for="structure_type">Structure Type</label>
+      <select class="form-control" name="structure_type" data-errormessage='{"valueMissing": "This is a required field"}' required>
+        <option value=""></option>
+        <option value="Single Family Home">Single Family Home</option>
+        <option value="Multi-Family Home">Multi-Family Home</option>
+        <option value="Mobile Home">Mobile Home</option>
+        <option value="Business">Business</option>
+      </select>
+    </div>
+    <div class="form-group" data-role="fieldcontain">
+      <label for="damage_severity">Overall Damage Severity</label>
+      <select class="form-control" name="damage_severity" data-errormessage='{"valueMissing": "This is a required field"}' required>
+        <option value=""></option>
+        <option value="Destroyed">Destroyed</option>
+        <option value="Major">Major</option>
+        <option value="Minor">Minor</option>
+        <option value="None">None</option>
+      </select>
+    </div>
+    <div class="form-group" data-role="fieldcontain">
+      <label for="damage_area[]">Area(s) of Damage</label>
+      <select class="form-control" name="damage_area[]" data-errormessage='{"valueMissing": "This is a required field"}' multiple required>
+        <option value="Doors">Doors</option>
+        <option value="Floors">Floors</option>
+        <option value="Foundation">Foundation</option>
+        <option value="Pool">Pool</option>
+        <option value="Roof">Roof</option>
+        <option value="Walls">Walls</option>
+        <option value="Windows">Windows</option>
+      </select>
+    </div>
+    <div class="form-group" data-role="fieldcontain">
+      <label for="damage_type[]">Type(s) of Damage</label>
+      <select class="form-control" name="damage_type[]" data-errormessage='{"valueMissing": "This is a required field"}' multiple required>
+        <option value="Fire">Fire</option>
+        <option value="Projectile">Projectile</option>
+        <option value="Water">Water</option>
+        <option value="Wind">Wind</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group" data-role="fieldcontain">
+      <label for="structure_accessable">Is the structure accessable?</label>
+      <select class="form-control" name="structure_accessable" data-errormessage='{"valueMissing": "This is a required field"}' required>
+        <option value=""></option>
+        <option value="Maybe">Maybe</option>
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+    </div>
+    <div class="form-group" data-role="fieldcontain">
+      <label for="residence_habitable">Is the residence habitable?</label>
+      <select class="form-control" name="residence_habitable" data-errormessage='{"valueMissing": "This is a required field"}' required>
+        <option value=""></option>
+        <option value="Maybe">Maybe</option>
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="uploads">Photos</label>
+      <input type="file" id="uploads" name="uploads[]" accept="image/*">
+    </div>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Basic Information</h3>
+  </div>
+  <div class="panel-body">
+    <div class="form-group" data-role="fieldcontain">
+      <label for="storm_date">Storm Date</label>
+      <input type="date" class="form-control" name="storm_date" data-errormessage='{"valueMissing": "This is a required field"}'>
+    </div>
+    <div class="form-group" data-role="fieldcontain">
+      <label for="survey_date">Survey Date</label>
+      <input type="date" class="form-control" name="survey_date" data-errormessage='{"valueMissing": "This is a required field"}' required>
+    </div>
+    <div class="form-group" data-role="fieldcontain">
+      <label for="building_name">Building Name</label>
+      <input class="form-control" type="text" name="building_name">
+    </div>
+    <div class="form-group" data-role="fieldcontain">
+      <label for="building_address">Building Address</label>
+      <input class="form-control" type="text" name="building_address">
+    </div>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Reporter Information</h3>
+  </div>
+  <div class="panel-body">
+    <div class="form-group" data-role="fieldcontain">
+      <label for="reporter_name">Name</label>
+      <input class="form-control" type="text" name="reporter_name">
+    </div>
+    <div class="form-group" data-role="fieldcontain">
+      <label for="reporter_phone">Phone Number</label>
+      <input class="form-control" type="number" name="reporter_phone">
+    </div>
+    <div class="form-group" data-role="fieldcontain">
+      <label for="reporter_email">Email</label>
+      <input class="form-control" type="email" name="reporter_email">
+    </div>
+    <div class="form-group">
+      <label for="comments">Additional Comments</label>
+      <textarea class="form-control" rows="3" name="comments"></textarea>
+    </div>
+  </div>
+</div>

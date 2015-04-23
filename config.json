@@ -1,0 +1,95 @@
+{
+  "data": {
+    "table": "data",
+    "fields": [
+      "id",
+      "strftime('%Y-%m-%d %H:%M',datetime(timestamp, 'localtime')) AS Timestamp",
+      "structure_type AS 'Structure Type'",
+      "damage_severity AS 'Damage Severity'",
+      "damage_area AS 'Damage Area'",
+      "damage_type AS 'Damage Type'",
+      "uploads AS Photos",
+      "lat || ', ' || lng AS Location",
+      "lng AS x",
+      "lat AS y"
+    ]
+  },
+  "app": {
+    "title": "Damage Reporter",
+    "description": "",
+    "author": ""
+  },
+  "navbar": {
+    "icon": "",
+    "title": "Building Damage Reporter"
+  },
+  "twitter": {
+    "via": "fulcrumapp",
+    "tweet": "Check it out!"
+  },
+  "text": {
+    "newItem": "Damage Report",
+    "downloadFileName": "damage"
+  },
+  "about": {
+    "showAtStartup": false,
+    "title": "Post Storm Building Damage Reporter",
+    "text": "This is a simple citizen-driven app for quick reporting of visible damage to a building after a storm or other disaster. Assess the severity of the damage while including photos, documenting damage type, and more. Documenting structural hazards is critical for the safety of first responders on the scene assisting with cleanup and humanitarian aid."
+  },
+  "sidebar": {
+    "titleField": "Timestamp",
+    "sortOrder": "desc"
+  },
+  "marker": {
+    "titleField": "Damage Severity",
+    "cluster": true,
+    "layer": {
+      "name": "Damage Reports"
+    },
+    "icon": {
+      "iconUrl": "assets/img/markers/cb0d0c.png",
+      "iconSize": [30, 40],
+      "iconAnchor": [15, 32],
+      "popupAnchor": [0, -20]
+    },
+    "status": {
+      "field": "Damage Severity",
+      "values": [{
+        "name": "Destroyed",
+        "icon": {
+          "iconUrl": "assets/img/markers/87d30f.png",
+          "iconSize": [30, 40],
+          "iconAnchor": [15, 32],
+          "popupAnchor": [0, -20]
+        }
+      },
+      {
+        "name": "Major",
+        "icon": {
+          "iconUrl": "assets/img/markers/cb0d0c.png",
+          "iconSize": [30, 40],
+          "iconAnchor": [15, 32],
+          "popupAnchor": [0, -20]
+        }
+      },
+      {
+        "name": "Minor",
+        "icon": {
+          "iconUrl": "assets/img/markers/1891c9.png",
+          "iconSize": [30, 40],
+          "iconAnchor": [15, 32],
+          "popupAnchor": [0, -20]
+        }
+      },
+      {
+        "name": "None",
+        "icon": {
+          "iconUrl": "assets/img/markers/ff8819.png",
+          "iconSize": [30, 40],
+          "iconAnchor": [15, 32],
+          "popupAnchor": [0, -20]
+        }
+      }]
+    }
+  }
+}
