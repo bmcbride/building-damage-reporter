@@ -15,26 +15,26 @@
     ]
   },
   "app": {
-    "title": "Damage Reporter",
+    "title": "Mapfeeder Connect",
     "description": "",
     "author": ""
   },
   "navbar": {
     "icon": "",
-    "title": "Building Damage Reporter"
+    "title": "Mapfeeder Connect"
   },
   "twitter": {
     "via": "fulcrumapp",
     "tweet": "Check it out!"
   },
   "text": {
-    "newItem": "Damage Report",
+    "newItem": "Submit An Issue",
     "downloadFileName": "damage"
   },
   "about": {
     "showAtStartup": false,
-    "title": "Post Storm Building Damage Reporter",
-    "text": "This is a simple citizen-driven app for quick reporting of visible damage to a building after a storm or other disaster. Assess the severity of the damage while including photos, documenting damage type, and more. Documenting structural hazards is critical for the safety of first responders on the scene assisting with cleanup and humanitarian aid."
+    "title": "Post Issue",
+    "text": "This is a simple citizen-driven app for quick reporting of issues they find in their city."
   },
   "sidebar": {
     "titleField": "Timestamp",
@@ -44,7 +44,7 @@
     "titleField": "Damage Severity",
     "cluster": true,
     "layer": {
-      "name": "Damage Reports"
+      "name": "Issues"
     },
     "icon": {
       "iconUrl": "assets/img/markers/cb0d0c.png",
